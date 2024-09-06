@@ -10,6 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            setUrl("https://jitpack.io")  // Corrected usage of the URL function in Kotlin
+        }
     }
 }
 
