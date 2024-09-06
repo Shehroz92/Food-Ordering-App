@@ -1,4 +1,4 @@
-package eu.practice.foodorderingapp.activities
+package eu.practice.foodorderingapp.activities.activity.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

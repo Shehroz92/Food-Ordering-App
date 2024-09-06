@@ -1,4 +1,4 @@
-package eu.practice.foodorderingapp.activities
+package eu.practice.foodorderingapp.activities.activity.activity
 
 
 import android.content.Intent
@@ -20,7 +20,9 @@ private val binding : ActivityStartBinding by lazy {
             val intent = Intent(this@Start , LoginActivity::class.java )
             startActivity(intent)
             finish()
-
         }
+
+
+
     }
 }

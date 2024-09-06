@@ -1,11 +1,9 @@
-package eu.practice.foodorderingapp.activities
+package eu.practice.foodorderingapp.activities.activity.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import eu.practice.foodorderingapp.R
 import eu.practice.foodorderingapp.databinding.ActivityLoginBinding
-import eu.practice.foodorderingapp.databinding.ActivityStartBinding
 
 class LoginActivity : AppCompatActivity() {
 
@@ -16,11 +14,17 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
         binding.donthaveaccount.setOnClickListener{
             val intent = Intent(this@LoginActivity , SignUpActivity::class.java )
             startActivity(intent)
             finish()
+        }
 
+        binding.btnlogin.setOnClickListener {
+            val intent = Intent(this@LoginActivity, ChoseLocationActivity ::class.java )
+            startActivity(intent)
+            finish()
         }
 
     }

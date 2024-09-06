@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:elevation="5sp"
-    tools:context=".activities.LoginActivity">
+    tools:context=".activities.activity.activity.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -137,7 +137,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/btnlogin"
         android:layout_width="152sp"
         android:layout_height="57sp"
         android:layout_marginTop="16dp"
@@ -161,9 +161,9 @@
         android:text="Don't have account?"
         android:textColor="@color/text_colour"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintEnd_toEndOf="@+id/btnlogin"
+        app:layout_constraintStart_toStartOf="@+id/btnlogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin" />
 
     <TextView
         android:id="@+id/textView12"
