@@ -25,7 +25,7 @@
             >
 
             <ImageView
-                android:id="@+id/foodpopular"
+                android:id="@+id/menuImage"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="10sp"
@@ -36,20 +36,20 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/Foodnamepopular"
+                android:id="@+id/menuFoodnamepopular"
                 android:layout_width="111dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
                 android:text="Food Name"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/foodpopular"
-                app:layout_constraintStart_toEndOf="@id/foodpopular"
-                app:layout_constraintTop_toTopOf="@+id/foodpopular"
+                app:layout_constraintBottom_toBottomOf="@+id/menuImage"
+                app:layout_constraintStart_toEndOf="@id/menuImage"
+                app:layout_constraintTop_toTopOf="@+id/menuImage"
                 />
 
             <TextView
-                android:id="@+id/pricepopular"
+                android:id="@+id/menuprice"
                 android:layout_width="80dp"
                 android:layout_height="26dp"
                 android:textAlignment="center"
@@ -65,7 +65,7 @@
                 />
 
             <TextView
-                android:id="@+id/addtocartpopular"
+                android:id="@+id/menuaddtocart"
                 android:layout_width="90dp"
                 android:layout_height="20dp"
                 android:layout_margin="5sp"
@@ -76,9 +76,9 @@
                 android:text="Add to Cart"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="@+id/pricepopular"
-                app:layout_constraintStart_toStartOf="@id/pricepopular"
-                app:layout_constraintTop_toBottomOf="@id/pricepopular"
+                app:layout_constraintEnd_toEndOf="@+id/menuprice"
+                app:layout_constraintStart_toStartOf="@id/menuprice"
+                app:layout_constraintTop_toBottomOf="@id/menuprice"
 
                 />
 
