@@ -21,16 +21,16 @@ class MenuAdapter(
     }
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
-        holder.bind(position)
+        holder.bind(menuItemsName[position],menuItemPrice[position],menuImage[position])
     }
 
     inner class MenuViewHolder(private val binding: MenuItemsBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(position: Int) {
+        fun bind(foodName: String, foodPrice: String, foodImage: Int) {
             binding.apply {
 
-                menuFoodamepopular.text = menuItemsName[position]
-                menuprice.text = menuItemPrice[position]
-                // menuImage.setImageResource(menuImage[position])
+                notificationName.text = foodName
+                menuprice.text = foodPrice
+                notificationImage.setImageResource(foodImage)
 
             }
         }

@@ -1,14 +1,12 @@
 package eu.practice.foodorderingapp.activities.activity.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import eu.practice.foodorderingapp.R
-import eu.practice.foodorderingapp.activities.activity.adapter.CartAdapter
 import eu.practice.foodorderingapp.activities.activity.adapter.MenuAdapter
 import eu.practice.foodorderingapp.databinding.FragmentMenuBottomSheetBinding
 

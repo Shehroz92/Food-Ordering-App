@@ -25,7 +25,7 @@
             >
 
             <ImageView
-                android:id="@+id/menuImage"
+                android:id="@+id/notificationImage"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="10sp"
@@ -43,9 +43,9 @@
                 android:text="Food Name"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/menuImage"
-                app:layout_constraintStart_toEndOf="@id/menuImage"
-                app:layout_constraintTop_toTopOf="@+id/menuImage"
+                app:layout_constraintBottom_toBottomOf="@+id/notificationImage"
+                app:layout_constraintStart_toEndOf="@id/notificationImage"
+                app:layout_constraintTop_toTopOf="@+id/notificationImage"
                 />
 
             <TextView
