@@ -7,15 +7,13 @@ import eu.practice.foodorderingapp.databinding.PopularItemBinding
 
 class PopularAdapter ( private val items:List<String> , private val image:List<Int> , private val price:List<String>) :RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
 
-    class PopularViewHolder(      private val binding : PopularItemBinding ) : RecyclerView.ViewHolder(binding.root){
+    class PopularViewHolder( private val binding : PopularItemBinding ) : RecyclerView.ViewHolder(binding.root){
 
-        private val imagesView = binding.foodpopular
+        private val imagesView = binding.menuImage
         fun bind(item: String, images: Int , price:String ) {
-            binding.Foodnamepopular.text = item
-            binding.pricepopular.text = price
+            binding.menuFoodnamepopular.text = item
+            binding.menuprice.text=price
             imagesView.setImageResource(images)
-
-
 
         }
 

@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import eu.practice.foodorderingapp.R
+import eu.practice.foodorderingapp.activities.activity.adapter.CartAdapter
+import eu.practice.foodorderingapp.activities.activity.adapter.MenuAdapter
 import eu.practice.foodorderingapp.databinding.FragmentMenuBottomSheetBinding
 
 class MenuBottomSheetFragment : BottomSheetDialogFragment() {
@@ -26,6 +29,25 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
         // Inflate the layout for this fragment
         binding = FragmentMenuBottomSheetBinding.inflate(layoutInflater,container,false)
 
+        binding.buttonBack.setOnClickListener {
+            dismiss()
+        }
+
+
+        val menuFoodName = listOf("Burger","Pasta","Pizza","Momo","sandwich","Platter")
+        val menuItemPrice = listOf("$50","$60","$70","$80","$90","$100",)
+        val menuImage = listOf(
+            R.drawable.menu1,
+            R.drawable.menu2,
+            R.drawable.menu3,
+            R.drawable.menu1,
+            R.drawable.menu2,
+            R.drawable.menu3
+        )
+
+        val adapter = MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPrice),ArrayList(menuImage))
+        binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.menuRecyclerView.adapter=adapter
 
 
         return binding.root

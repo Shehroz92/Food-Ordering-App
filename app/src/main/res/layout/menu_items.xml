@@ -33,13 +33,13 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="10sp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/backkground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/menuFoodnamepopular"
+                android:id="@+id/menuFoodamepopular"
                 android:layout_width="111dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"

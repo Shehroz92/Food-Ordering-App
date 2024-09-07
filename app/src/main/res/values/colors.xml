@@ -5,5 +5,6 @@
     <color name="text_colour">#1FC57A</color>
     <color name="start_colour">#53E88B</color>
     <color name="end_colour">#15BE77</color>
+    <color name="icon_colour">#FEAD1D</color>
 
 </resources>
