@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FoodOrderingApp"
         tools:targetApi="31">
         <activity
+            android:name=".activities.activity.activity.PlaceOrderActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.activity.activity.ChoseLocationActivity"
             android:exported="false" />
         <activity
@@ -26,22 +29,16 @@
             android:exported="false" />
         <activity
             android:name=".activities.activity.activity.SplashScreen"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activities.activity.activity.MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustPan"
-            >
-
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <meta-data

@@ -50,7 +50,7 @@
             android:background="@android:drawable/screen_background_light_transparent"
             android:ems="10"
             android:inputType="text"
-            android:text="Name" />
+            android:text="Admin" />
     </LinearLayout>
 
     <LinearLayout
