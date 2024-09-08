@@ -38,8 +38,4 @@ This Android application allows users to browse, search, and order food with an 
 
 Include some screenshots of the app showing different screens (e.g., Home, Cart, Sign-In, etc.).
 
-## Installation
 
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/yourusername/food-ordering-app.git]
