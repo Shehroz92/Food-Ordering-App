@@ -40,48 +40,18 @@ This Android application allows users to browse, search, and order food with an 
   <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Splash%20scren.jpg" width="200" />
   <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Sign%20Up.jpg" width="200" />
   <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Log%20in.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Home.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Cart.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Search.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/History.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Profile.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Notification.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/View%20Menu.jpg" width="200" />
+
+  
 </p>
 
 
-**Splash Screen:**
-
-![Splash Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Splash%20scren.jpg)
-
-**Sign-Up Screen:**
-
-![Sign-Up Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Sign%20Up.jpg)
-
-**Log-In Screen:**
-
-![Log-In Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Log%20in.jpg)
-
-**Home Screen:**
-
-![Home Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Home.jpg)
-
-**Cart Screen:**
-
-![Cart Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Cart.jpg)
-
-**Search Screen:**
-
-![Search Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Search.jpg)
-
-**History Screen:**
-
-![History Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/History.jpg)
-
-**Profile Screen:**
-
-![History Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Profile.jpg)
-
-**Notification Screen:**
-
-![Notification  Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Notification.jpg)
-
-**View Menu Screen:**
-
-![View Menu Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/View%20Menu.jpg)
 
 
 
