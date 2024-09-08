@@ -1,12 +1,16 @@
 package eu.practice.foodorderingapp.activities.activity.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import eu.practice.foodorderingapp.R
+import eu.practice.foodorderingapp.activities.activity.activity.PlaceOrderActivity
 import eu.practice.foodorderingapp.activities.activity.adapter.CartAdapter
 import eu.practice.foodorderingapp.databinding.CartItemsBinding
 import eu.practice.foodorderingapp.databinding.FragmentCartBinding
@@ -26,6 +30,12 @@ private lateinit var binding: FragmentCartBinding
 
         binding =FragmentCartBinding.inflate(inflater,container,false)
 
+        binding.btnProceed.setOnClickListener {
+            val intent = Intent(requireContext(),PlaceOrderActivity::class.java)
+            startActivity(intent)
+
+        }
+
         val cartFoodName = listOf("Burger","Pasta","Pizza","Momo","sandwich","Platter")
         val cartItemPrice = listOf("$50","$60","$70","$80","$90","$100",)
         val cartImage = listOf(
@@ -40,6 +50,7 @@ private lateinit var binding: FragmentCartBinding
         val adapter = CartAdapter(ArrayList(cartFoodName),ArrayList(cartItemPrice),ArrayList(cartImage))
         binding.cartRecycler.layoutManager = LinearLayoutManager(requireContext())
         binding.cartRecycler.adapter=adapter
+
         return binding.root
 
     }
