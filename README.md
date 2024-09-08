@@ -38,7 +38,7 @@ This Android application allows users to browse, search, and order food with an 
 
 
 **Sign-In Screen:**
-![Sign-In Screen] (Home.jpg)
+![Sign-In Screen] (https://github.com/Shehroz92/Food-Ordering-App/blob/master/Home.jpg)
 
 **Home Screen:**
 ![Home Screen] 
