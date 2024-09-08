@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
@@ -34,6 +35,8 @@
                 app:layout_constraintEnd_toEndOf="@+id/plus"
                 app:layout_constraintStart_toStartOf="@+id/minus"
                 app:layout_constraintTop_toBottomOf="@+id/cartItemQuantity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10sp"
                 app:srcCompat="@drawable/trash" />
 
             <ImageView
@@ -54,6 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:layout_marginStart="16sp"
                 app:layout_constraintBottom_toTopOf="@+id/cartItemprice"
                 app:layout_constraintStart_toEndOf="@+id/cartimage"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -63,6 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:layout_marginStart="16sp"
                 android:textColor="@color/text_colour"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cartimage"
