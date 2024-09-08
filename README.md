@@ -38,7 +38,7 @@ This Android application allows users to browse, search, and order food with an 
 
 
 **Sign-In Screen:**
-![Sign-In Screen] 
+![Sign-In Screen] (Home.jpg)
 
 **Home Screen:**
 ![Home Screen] 
