@@ -52,7 +52,9 @@ This Android application allows users to browse, search, and order food with an 
 </p>
 
 
+## Demo Video
 
+[![Watch the demo video](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Retrofit%20API%20and%20Service.mp4)
 
 
 
