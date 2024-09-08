@@ -36,6 +36,12 @@ This Android application allows users to browse, search, and order food with an 
 
 ## Screenshots
 
-Include some screenshots of the app showing different screens (e.g., Home, Cart, Sign-In, etc.).
+
+**Sign-In Screen:**
+![Sign-In Screen] 
+
+**Home Screen:**
+![Home Screen] 
+
 
 
