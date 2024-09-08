@@ -36,6 +36,13 @@ This Android application allows users to browse, search, and order food with an 
 
 ## Screenshots
 
+<p align="center">
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Splash%20scren.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Sign%20Up.jpg" width="200" />
+  <img src="https://github.com/Shehroz92/Food-Ordering-App/blob/master/Log%20in.jpg" width="200" />
+</p>
+
+
 **Splash Screen:**
 
 ![Splash Screen](https://github.com/Shehroz92/Food-Ordering-App/blob/master/Splash%20scren.jpg)
