@@ -3,7 +3,6 @@ package eu.practice.foodorderingapp.activities.activity.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import eu.practice.foodorderingapp.R
 import eu.practice.foodorderingapp.databinding.ActivityDetailsBinding
 
 class DetailsActivity : AppCompatActivity() {
@@ -24,6 +23,7 @@ class DetailsActivity : AppCompatActivity() {
         binding.imageButton.setOnClickListener {
             finish()
         }
+
     }
 }
 

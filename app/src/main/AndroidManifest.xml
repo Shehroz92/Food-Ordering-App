@@ -16,17 +16,6 @@
             android:name=".activities.activity.activity.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.activity.activity.MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.FoodOrderingApp" />
-        <activity
-            android:name=".activities.activity.activity.AddToCartActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.activity.activity.PlaceOrderActivity"
             android:exported="false" />
         <activity
@@ -34,6 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".activities.activity.activity.SignUpActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false" />
         <activity
             android:name=".activities.activity.activity.LoginActivity"
@@ -43,16 +33,20 @@
             android:exported="false" />
         <activity
             android:name=".activities.activity.activity.SplashScreen"
-            android:exported="true" />
-        <activity
-            android:name=".activities.activity.activity.MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustPan">
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activities.activity.activity.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+
         </activity>
 
         <meta-data

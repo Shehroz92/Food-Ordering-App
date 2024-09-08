@@ -155,7 +155,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/buttonCreatAccount"
         android:layout_width="152sp"
         android:layout_height="57sp"
         android:layout_marginTop="16dp"
@@ -175,21 +175,15 @@
         android:id="@+id/already_have_an_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/lato_regular"
         android:text="Already Have An Account?"
         android:textColor="@color/text_colour"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3"
-        app:layout_goneMarginTop="5sp"
-        android:layout_marginBottom="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCreatAccount"
+        app:layout_constraintStart_toStartOf="@+id/buttonCreatAccount"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreatAccount"
+
         />
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
