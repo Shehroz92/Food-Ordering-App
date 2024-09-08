@@ -16,6 +16,11 @@
             android:name=".activities.activity.activity.DetailsActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.activity.activity.MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.FoodOrderingApp" />
+        <activity
             android:name=".activities.activity.activity.AddToCartActivity"
             android:exported="false" />
         <activity
