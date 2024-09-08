@@ -42,4 +42,4 @@ Include some screenshots of the app showing different screens (e.g., Home, Cart,
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/food-ordering-app.git
+   git clone [https://github.com/yourusername/food-ordering-app.git]
