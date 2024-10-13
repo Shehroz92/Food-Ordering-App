@@ -35,18 +35,15 @@ class SearchFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentSearchBinding.inflate(inflater,container,false)
 
-        adapter = MenuAdapter(filteredMenuFoodName,filteredMenuFoodPrice,filteredMenuFoodImage,requireContext())
+    //    adapter = MenuAdapter(filteredMenuFoodName,filteredMenuFoodPrice,filteredMenuFoodImage,requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
 
-        // setup for search View
         setupSearchView()
-        // show all Items
         showAllMenu()
-
 
         return binding.root
     }
@@ -97,6 +94,7 @@ class SearchFragment : Fragment() {
 
             }
         }
+
         adapter.notifyDataSetChanged()
 
     }

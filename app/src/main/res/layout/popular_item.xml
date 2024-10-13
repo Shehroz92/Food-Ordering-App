@@ -25,7 +25,7 @@
             >
 
             <ImageView
-                android:id="@+id/notificationImage"
+                android:id="@+id/foodImage"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="10sp"
@@ -43,13 +43,13 @@
                 android:text="Food Name"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/notificationImage"
-                app:layout_constraintStart_toEndOf="@id/notificationImage"
-                app:layout_constraintTop_toTopOf="@+id/notificationImage"
+                app:layout_constraintBottom_toBottomOf="@+id/foodImage"
+                app:layout_constraintStart_toEndOf="@id/foodImage"
+                app:layout_constraintTop_toTopOf="@+id/foodImage"
                 />
 
             <TextView
-                android:id="@+id/menuprice"
+                android:id="@+id/foodPrice"
                 android:layout_width="80dp"
                 android:layout_height="26dp"
                 android:textAlignment="center"
@@ -76,9 +76,9 @@
                 android:text="Add to Cart"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="@+id/menuprice"
-                app:layout_constraintStart_toStartOf="@id/menuprice"
-                app:layout_constraintTop_toBottomOf="@id/menuprice"
+                app:layout_constraintEnd_toEndOf="@+id/foodPrice"
+                app:layout_constraintStart_toStartOf="@id/foodPrice"
+                app:layout_constraintTop_toBottomOf="@id/foodPrice"
 
                 />
 

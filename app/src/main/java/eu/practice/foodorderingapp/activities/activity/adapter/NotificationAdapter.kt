@@ -27,9 +27,9 @@ class NotificationAdapter(
     }
    inner class NotificationViewHolder( private val binding: NotificationItemBinding ) : RecyclerView.ViewHolder(binding.root) {
        fun bind(item: String, images: Int) {
-           val imageView = binding.notificationImage
+           val imageView = binding.foodImage
            binding.apply {
-               notificationName.text = item
+               foodName.text = item
                imageView.setImageResource(images)
            }
        }

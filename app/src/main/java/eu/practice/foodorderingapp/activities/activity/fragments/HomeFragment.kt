@@ -32,6 +32,7 @@ class HomeFragment : Fragment() {
     ): View? {
          binding = FragmentHomeBinding.inflate(inflater,container,false)
 
+
         binding.viewMenu.setOnClickListener {
             val bottomSheetDialog = MenuBottomSheetFragment()
             bottomSheetDialog.show(parentFragmentManager,"Test")
@@ -74,8 +75,6 @@ class HomeFragment : Fragment() {
         val adapter  =  PopularAdapter(foodName,popularFoodItems,price,requireContext())
         binding.recycler.layoutManager = LinearLayoutManager(requireContext())
         binding.recycler.adapter = adapter
-
-
 
 
 
