@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "455476274319",
+    "firebase_url": "https://admin-food-app-ebafc-default-rtdb.firebaseio.com",
+    "project_id": "admin-food-app-ebafc",
+    "storage_bucket": "admin-food-app-ebafc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455476274319:android:76a0c3500aeab462ab3cfa",
+        "android_client_info": {
+          "package_name": "eu.practice.admindashboardoffoodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455476274319-2i4l76o40dpauuasvgrejp985r48icdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eu.practice.admindashboardoffoodapp",
+            "certificate_hash": "a223f2028d85e520f2147029bef1ccc292184e85"
+          }
+        },
+        {
+          "client_id": "455476274319-cpf325ddhthsm993tcbk562ctl5chqtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQCgVWi8SATtuJ8PS6LK5JpATm6KkyjBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455476274319-cpf325ddhthsm993tcbk562ctl5chqtm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455476274319:android:31888eec9b3f947cab3cfa",
+        "android_client_info": {
+          "package_name": "eu.practice.foodorderingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455476274319-3727854bn142fg7bq40sbovgbjal7b4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eu.practice.foodorderingapp",
+            "certificate_hash": "a223f2028d85e520f2147029bef1ccc292184e85"
+          }
+        },
+        {
+          "client_id": "455476274319-cpf325ddhthsm993tcbk562ctl5chqtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQCgVWi8SATtuJ8PS6LK5JpATm6KkyjBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455476274319-cpf325ddhthsm993tcbk562ctl5chqtm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

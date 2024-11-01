@@ -8,7 +8,7 @@
     android:background="@drawable/profileeditetextshape"
     android:paddingLeft="6sp"
     android:paddingRight="6sp"
-    tools:context=".activities.activity.fragments.profileFragment"
+    tools:context=".activities.activity.fragments.ProfileFragment"
 
     >
 
