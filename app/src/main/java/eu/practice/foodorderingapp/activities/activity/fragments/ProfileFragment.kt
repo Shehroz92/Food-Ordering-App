@@ -5,12 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import com.google.firebase.auth.FirebaseAuth
 import eu.practice.foodorderingapp.R
 
 
-class profileFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
 
 

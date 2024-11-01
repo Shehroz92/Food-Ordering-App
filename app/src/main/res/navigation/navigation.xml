@@ -27,7 +27,7 @@
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="eu.practice.foodorderingapp.activities.activity.fragments.profileFragment"
+        android:name="eu.practice.foodorderingapp.activities.activity.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 
