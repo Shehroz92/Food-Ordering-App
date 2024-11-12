@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/detailsfoodDescription"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -81,13 +81,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Ingredients"
-        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/detailsfoodDescription"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintStart_toStartOf="@+id/detailsfoodDescription"
+        app:layout_constraintTop_toBottomOf="@+id/detailsfoodDescription" />
 
     <TextView
-        android:id="@+id/ingredientsTextview"
+        android:id="@+id/ingredientsfood"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -112,6 +112,6 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingredientsTextview" />
+        app:layout_constraintTop_toBottomOf="@+id/ingredientsfood" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -59,6 +59,7 @@ class MenuAdapter(
         }
 
          // set data into recycler view item name , price , image
+
         fun bind(position: Int) {
         val menuItem = menuItem[position]
             binding.apply {
