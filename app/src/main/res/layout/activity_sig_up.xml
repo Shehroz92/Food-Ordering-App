@@ -39,6 +39,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     <EditText
         android:id="@+id/nameuser"
         android:layout_width="325sp"
@@ -107,8 +108,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/lato_regular"
-        android:textStyle="bold"
         android:text="Sign Up With"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -150,8 +151,8 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/green_button"
         android:fontFamily="@font/lato_bold"
-        android:text="Create Account"
         android:padding="5sp"
+        android:text="Create Account"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"

@@ -8,7 +8,7 @@ import eu.practice.foodorderingapp.databinding.ActivityChoseLocationBinding
 
 class ChoseLocationActivity : AppCompatActivity() {
 
-    private val binding : ActivityChoseLocationBinding by lazy {
+    private val binding: ActivityChoseLocationBinding by lazy {
         ActivityChoseLocationBinding.inflate(layoutInflater)
     }
 
@@ -16,8 +16,8 @@ class ChoseLocationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val locationList : Array<String> = arrayOf("Karachi" ,"Lahore" ,"Islamabad" ,"Multan")
-        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,locationList)
+        val locationList: Array<String> = arrayOf("Karachi", "Lahore", "Islamabad", "Multan")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, locationList)
         val autoCompleteTextView = binding.listofLocation
         autoCompleteTextView.setAdapter(adapter)
 

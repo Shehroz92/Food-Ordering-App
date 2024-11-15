@@ -13,8 +13,8 @@ import eu.practice.foodorderingapp.activities.activity.models.MenuItem
 import eu.practice.foodorderingapp.databinding.MenuItemsBinding
 
 class MenuAdapter(
-    private var menuItem: List<MenuItem> ,
-    private val requiredContext :Context
+    private var menuItem: List<MenuItem>,
+    private val requiredContext: Context
 ) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
 
@@ -46,22 +46,22 @@ class MenuAdapter(
         private fun openDetailActivity(position: Int) {
             val menuItem = menuItem[position]
             // an intent to open details and pass data
-            val intent = Intent(requiredContext,DetailsActivity::class.java).apply {
-                putExtra("MenuItemName",menuItem.foodName)
-                putExtra("MenuItemPrice",menuItem.foodPrice)
-                putExtra("MenuItemDescription",menuItem.foodDescription)
-                putExtra("MenuItemIngredients",menuItem.foodIngredient)
-                putExtra("MenuItemImageUrl",menuItem.foodImage)
+            val intent = Intent(requiredContext, DetailsActivity::class.java).apply {
+                putExtra("MenuItemName", menuItem.foodName)
+                putExtra("MenuItemPrice", menuItem.foodPrice)
+                putExtra("MenuItemDescription", menuItem.foodDescription)
+                putExtra("MenuItemIngredients", menuItem.foodIngredient)
+                putExtra("MenuItemImageUrl", menuItem.foodImage)
             }
             // start activity
             requiredContext.startActivity(intent)
 
         }
 
-         // set data into recycler view item name , price , image
+        // set data into recycler view item name , price , image
 
         fun bind(position: Int) {
-        val menuItem = menuItem[position]
+            val menuItem = menuItem[position]
             binding.apply {
                 foodName.text = menuItem.foodName
                 foodPrice.text = menuItem.foodPrice

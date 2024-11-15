@@ -14,12 +14,13 @@ import eu.practice.foodorderingapp.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment() {
 
-    private lateinit var binding : FragmentSearchBinding
+    private lateinit var binding: FragmentSearchBinding
     private lateinit var adapter: MenuAdapter
 
-   private  val originalMenuFoodName = listOf("Burger","Pasta","Pizza","Momo","sandwich","Platter")
-   private  val originalMenuItemPrice = listOf("$50","$60","$70","$80","$90","$100",)
-   private  val originalMenuImage = listOf(
+    private val originalMenuFoodName =
+        listOf("Burger", "Pasta", "Pizza", "Momo", "sandwich", "Platter")
+    private val originalMenuItemPrice = listOf("$50", "$60", "$70", "$80", "$90", "$100")
+    private val originalMenuImage = listOf(
         R.drawable.menu1,
         R.drawable.menu2,
         R.drawable.menu3,
@@ -29,16 +30,16 @@ class SearchFragment : Fragment() {
     )
 
     private val filteredMenuFoodName = mutableListOf<String>()
-    private val filteredMenuFoodPrice= mutableListOf <String>()
+    private val filteredMenuFoodPrice = mutableListOf<String>()
     private val filteredMenuFoodImage = mutableListOf<Int>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSearchBinding.inflate(inflater,container,false)
+        binding = FragmentSearchBinding.inflate(inflater, container, false)
 
-    //    adapter = MenuAdapter(filteredMenuFoodName,filteredMenuFoodPrice,filteredMenuFoodImage,requireContext())
+        //    adapter = MenuAdapter(filteredMenuFoodName,filteredMenuFoodPrice,filteredMenuFoodImage,requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
 
@@ -62,11 +63,10 @@ class SearchFragment : Fragment() {
         adapter.notifyDataSetChanged()
 
 
-
     }
 
     private fun setupSearchView() {
-        binding.searchCView.setOnQueryTextListener(object :SearchView.OnQueryTextListener,
+        binding.searchCView.setOnQueryTextListener(object : SearchView.OnQueryTextListener,
             android.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 filterMenuItem(query)
@@ -87,7 +87,7 @@ class SearchFragment : Fragment() {
         filteredMenuFoodImage.clear()
 
         originalMenuFoodName.forEachIndexed { index, foodName ->
-            if (foodName.contains(query.toString(),ignoreCase = true)){
+            if (foodName.contains(query.toString(), ignoreCase = true)) {
                 filteredMenuFoodName.add(foodName)
                 filteredMenuFoodPrice.add(originalMenuItemPrice[index])
                 filteredMenuFoodImage.add(originalMenuImage[index])

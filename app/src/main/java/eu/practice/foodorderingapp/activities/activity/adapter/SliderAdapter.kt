@@ -7,7 +7,8 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import eu.practice.foodorderingapp.R
 
-class SliderAdapter(private val imageList: List<Int>) : RecyclerView.Adapter<SliderAdapter.SliderViewHolder>() {
+class SliderAdapter(private val imageList: List<Int>) :
+    RecyclerView.Adapter<SliderAdapter.SliderViewHolder>() {
 
     class SliderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.sliderImage)

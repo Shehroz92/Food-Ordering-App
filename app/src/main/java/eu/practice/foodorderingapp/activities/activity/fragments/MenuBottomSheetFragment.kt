@@ -64,11 +64,11 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
 
     private fun setAdapter() {
 
-            // Set up the RecyclerView with the menu items and adapter
-            val adapter = MenuAdapter(menuItems, requireContext())
-            binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
-            binding.menuRecyclerView.adapter = adapter
-            Log.d("Menu Items", "set Adapter: data set")
+        // Set up the RecyclerView with the menu items and adapter
+        val adapter = MenuAdapter(menuItems, requireContext())
+        binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.menuRecyclerView.adapter = adapter
+        Log.d("Menu Items", "set Adapter: data set")
 
     }
 }

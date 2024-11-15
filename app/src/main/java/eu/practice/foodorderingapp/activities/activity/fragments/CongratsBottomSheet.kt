@@ -12,7 +12,7 @@ import eu.practice.foodorderingapp.databinding.FragmentCongratsBottomSheetBindin
 
 class CongratsBottomSheet : BottomSheetDialogFragment() {
 
-    private lateinit var binding:FragmentCongratsBottomSheetBinding
+    private lateinit var binding: FragmentCongratsBottomSheetBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,10 +25,10 @@ class CongratsBottomSheet : BottomSheetDialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentCongratsBottomSheetBinding.inflate(layoutInflater,container,false)
+        binding = FragmentCongratsBottomSheetBinding.inflate(layoutInflater, container, false)
 
         binding.goHome.setOnClickListener {
-          var intent = Intent(requireContext() , MainActivity::class.java)
+            var intent = Intent(requireContext(), MainActivity::class.java)
             startActivity(intent)
 
         }

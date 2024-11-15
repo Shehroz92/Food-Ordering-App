@@ -12,7 +12,7 @@ import eu.practice.foodorderingapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-      private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.notificationButton.setOnClickListener {
             val bottomSheetDialog = NotificationBottomFragment()
-            bottomSheetDialog.show(supportFragmentManager,"Test")
+            bottomSheetDialog.show(supportFragmentManager, "Test")
 
         }
     }
