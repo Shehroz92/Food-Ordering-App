@@ -1,14 +1,19 @@
 package eu.practice.foodorderingapp.activities.activity.adapter
 
+import android.content.Context
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import eu.practice.foodorderingapp.databinding.BuyAgainItemBinding
+import kotlin.contracts.contract
 
 class BuyAgainAdapter(
-    private val buyAgainFoodName: ArrayList<String>,
-    private val buyAgainFoodPrice: ArrayList<String>,
-    private val buyAgainFoodImage: ArrayList<Int>
+    private val buyAgainFoodName: MutableList<String>,
+    private val buyAgainFoodPrice: MutableList<String>,
+    private val buyAgainFoodImage: MutableList<String>,
+    private var requireContext: Context
 ) : RecyclerView.Adapter<BuyAgainAdapter.BuyAgainViewHolder>() {
 
 
@@ -30,14 +35,15 @@ class BuyAgainAdapter(
         )
     }
 
-    class BuyAgainViewHolder(private val binding: BuyAgainItemBinding) :
+  inner  class BuyAgainViewHolder(private val binding: BuyAgainItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(foodName: String, foodPrice: String, foodImage: Int) {
+        fun bind(foodName: String, foodPrice: String, foodImage: String) {
             binding.apply {
                 binding.buyAgainFoodName.text = foodName
                 binding.buyAgainFoodPrice.text = foodPrice
-                binding.buyAgainFoodImage.setImageResource(foodImage)
-
+                val uriString = foodImage
+                val uri = Uri.parse(uriString)
+                Glide.with(requireContext).load(uri).into(binding.buyAgainFoodImage)
 
             }
         }
