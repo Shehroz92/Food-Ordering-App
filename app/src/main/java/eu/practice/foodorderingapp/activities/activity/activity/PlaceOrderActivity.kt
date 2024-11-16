@@ -1,18 +1,17 @@
 package eu.practice.foodorderingapp.activities.activity.activity
 
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContentProviderCompat.requireContext
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import eu.practice.foodorderingapp.R
 import eu.practice.foodorderingapp.activities.activity.fragments.CongratsBottomSheet
+import eu.practice.foodorderingapp.activities.activity.models.OrderDetails
 import eu.practice.foodorderingapp.databinding.ActivityPlaceOrderBinding
 
 class PlaceOrderActivity : AppCompatActivity() {
@@ -63,23 +62,52 @@ class PlaceOrderActivity : AppCompatActivity() {
 
 
         binding.placeButton.setOnClickListener {
+            // get data from the text view
+
+            name = binding.name.text.toString().trim()
+            address = binding.address.text.toString().trim()
+            phone = binding.phone.text.toString().trim()
+
+            if (name.isBlank() && address.isBlank() && phone.isBlank()) {
+                Toast.makeText(this, "Please fill all the details", Toast.LENGTH_SHORT).show()
+            } else {
+                placeOrder()
+            }
+        }
+    }
+
+    private fun placeOrder() {
+        userId = auth.currentUser?.uid ?: ""
+        val time = System.currentTimeMillis()
+        val itemPushKey = databaseReference.child("OrderDetails").push().key
+        val orderDetails = OrderDetails(userId,name,foodItemName,foodItemPrice,foodItemImage,foodItemQuantities,address,phone,time,itemPushKey,false,false)
+        val orderReference = databaseReference.child("OrderDetails").child(itemPushKey!!)
+        orderReference.setValue(orderDetails).addOnCompleteListener {
+
             val bottomSheetDialog = CongratsBottomSheet()
             bottomSheetDialog.show(supportFragmentManager, "Test")
-
+            removeItemFromCart()
+            finish()
         }
+    }
+
+    private fun removeItemFromCart() {
+        val cartItemsReference = databaseReference.child("user").child(userId).child("CartItems")
+        cartItemsReference.removeValue()
+
     }
 
     private fun calculateTotalAmount(): Int {
         var totalAmount = 0
         for (i in 0 until foodItemPrice.size) {
-            var price = foodItemPrice[i]
+            val price = foodItemPrice[i]
             val lastChar = price.last()
             val priceIntValue = if (lastChar == '$') {
                 price.dropLast(1).toInt()
             } else {
                 price.toInt()
             }
-            var quantity = foodItemQuantities[i]
+            val quantity = foodItemQuantities[i]
             totalAmount += priceIntValue * quantity
 
         }
