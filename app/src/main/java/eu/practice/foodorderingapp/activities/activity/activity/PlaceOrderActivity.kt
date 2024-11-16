@@ -79,7 +79,7 @@ class PlaceOrderActivity : AppCompatActivity() {
     private fun placeOrder() {
         userId = auth.currentUser?.uid ?: ""
         val time = System.currentTimeMillis()
-        val itemPushKey = databaseReference.child("OrderDetails").push().key
+        val itemPushKey :String ? = databaseReference.child("OrderDetails").push().key
         val orderDetails = OrderDetails(
             userId,
             name,
@@ -100,8 +100,18 @@ class PlaceOrderActivity : AppCompatActivity() {
             val bottomSheetDialog = CongratsBottomSheet()
             bottomSheetDialog.show(supportFragmentManager, "Test")
             removeItemFromCart()
-            finish()
+            addOrderToHistory(orderDetails)
+        }.addOnFailureListener {
+            Toast.makeText(this, "Failed to Order", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun addOrderToHistory(orderDetails: OrderDetails) {
+        val uniqueKey = "$userId-${System.currentTimeMillis()}"
+        databaseReference.child("user").child(userId).child("BuyHistory")
+            .child(orderDetails.itemPushKey!!)
+            .setValue(orderDetails)
+
     }
 
     private fun removeItemFromCart() {
