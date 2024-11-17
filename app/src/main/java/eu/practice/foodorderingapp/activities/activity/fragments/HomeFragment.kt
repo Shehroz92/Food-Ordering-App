@@ -69,13 +69,10 @@ class HomeFragment : Fragment() {
                     randomPopularItems()
                 }
             }
-
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
-
         })
-
     }
 
     private fun randomPopularItems() {
