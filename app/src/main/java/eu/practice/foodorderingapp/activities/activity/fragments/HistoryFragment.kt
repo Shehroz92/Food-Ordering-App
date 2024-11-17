@@ -49,15 +49,11 @@ class HistoryFragment : Fragment() {
     }
 
     private fun seeItemsRecentBuy() {
-        listOfOrderItem.firstOrNull()?.let {
-            recentBUy ->
-            val intent = Intent(requireContext(),RecentItemsActivity::class.java)
-            intent.putExtra("RecentBuyOrderItems",recentBUy)
+        listOfOrderItem.firstOrNull()?.let { recentBUy ->
+            val intent = Intent(requireContext(), RecentItemsActivity::class.java)
+            intent.putExtra("RecentBuyOrderItems", ArrayList(listOfOrderItem))
             startActivity(intent)
-
         }
-
-
     }
 
     private fun retrieveBuyHistory() {
@@ -115,14 +111,19 @@ class HistoryFragment : Fragment() {
         val buyAgainFoodName = mutableListOf<String>()
         val buyAgainFoodPrice = mutableListOf<String>()
         val buyAgainFoodImage = mutableListOf<String>()
-        for (i in 1  until listOfOrderItem.size){
+        for (i in 1 until listOfOrderItem.size) {
             listOfOrderItem[i].foodNames?.firstOrNull()?.let { buyAgainFoodName.add(it) }
             listOfOrderItem[i].foodPrices?.firstOrNull()?.let { buyAgainFoodPrice.add(it) }
             listOfOrderItem[i].foodImage?.firstOrNull()?.let { buyAgainFoodImage.add(it) }
         }
         val rv = binding.buyagainRecycler
         rv.layoutManager = LinearLayoutManager(requireContext())
-        buyAgainAdapter = BuyAgainAdapter(buyAgainFoodName,buyAgainFoodPrice,buyAgainFoodImage,requireContext())
+        buyAgainAdapter = BuyAgainAdapter(
+            buyAgainFoodName,
+            buyAgainFoodPrice,
+            buyAgainFoodImage,
+            requireContext()
+        )
         rv.adapter = buyAgainAdapter
     }
 }

@@ -48,6 +48,22 @@ class ProfileFragment : Fragment() {
 
 
         }
+        binding.apply {
+            ProfileName.isEnabled = false
+            ProfileAddress.isEnabled = false
+            ProfilePhone.isEnabled = false
+            profileEmail.isEnabled = false
+
+
+            binding.editProfile.setOnClickListener {
+
+                ProfileName.isEnabled = !ProfileName.isEnabled
+                ProfileAddress.isEnabled = !ProfileAddress.isEnabled
+                ProfilePhone.isEnabled = !ProfilePhone.isEnabled
+                profileEmail.isEnabled = !profileEmail.isEnabled
+
+            }
+        }
 
         return binding.root
     }
