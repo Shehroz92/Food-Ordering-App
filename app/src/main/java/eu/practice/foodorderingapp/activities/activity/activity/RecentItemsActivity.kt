@@ -31,7 +31,7 @@ class RecentItemsActivity : AppCompatActivity() {
 
         val recentOrderItems =
             intent.getSerializableExtra("RecentBuyOrderItems") as ArrayList<OrderDetails>
-            recentOrderItems?.let { orderDetails ->
+        recentOrderItems?.let { orderDetails ->
             if (orderDetails.isNotEmpty()) {
                 val recentOrderItem = orderDetails[0]
 
@@ -47,7 +47,8 @@ class RecentItemsActivity : AppCompatActivity() {
     private fun setAdapter() {
         val rv = binding.recentBuyRecyclerView
         rv.layoutManager = LinearLayoutManager(this)
-        val adapter = RecentBuyAdapter(this,allFoodNames,allFoodImages,allFoodPrices,allFoodQuantities)
+        val adapter =
+            RecentBuyAdapter(this, allFoodNames, allFoodImages, allFoodPrices, allFoodQuantities)
         rv.adapter = adapter
     }
 }

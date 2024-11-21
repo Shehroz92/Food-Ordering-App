@@ -80,16 +80,28 @@
                     app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodName" />
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="8dp"
-                    app:cardBackgroundColor="#4CAF50"
+                    android:id="@+id/moneyStatus"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginBottom="4dp"
+                    app:cardBackgroundColor="#929792"
                     app:cardCornerRadius="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/receivedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Received"
+                    android:visibility="invisible"
+                    android:backgroundTint="@color/text_colour"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/moneyStatus"
+                    app:layout_constraintStart_toStartOf="@id/moneyStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/moneyStatus" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -21,7 +21,7 @@ class SearchFragment : Fragment() {
     private lateinit var binding: FragmentSearchBinding
     private lateinit var adapter: MenuAdapter
     private lateinit var database: FirebaseDatabase
-    private val originalMenuItem  = mutableListOf<MenuItem>()
+    private val originalMenuItem = mutableListOf<MenuItem>()
 
 
     override fun onCreateView(
@@ -38,9 +38,9 @@ class SearchFragment : Fragment() {
     private fun retrieveMenuItem() {
         database = FirebaseDatabase.getInstance()
         val foodReference = database.reference.child("menu")
-        foodReference.addListenerForSingleValueEvent(object :ValueEventListener{
+        foodReference.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                for (foodSnapshot in snapshot.children){
+                for (foodSnapshot in snapshot.children) {
                     val menuItem = foodSnapshot.getValue(MenuItem::class.java)
                     menuItem?.let {
                         originalMenuItem.add(it)
@@ -63,7 +63,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun setAdapter(filterMenuItem: List<MenuItem>) {
-        adapter = MenuAdapter(filterMenuItem ,requireContext())
+        adapter = MenuAdapter(filterMenuItem, requireContext())
         binding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.menuRecyclerView.adapter = adapter
 
@@ -88,9 +88,9 @@ class SearchFragment : Fragment() {
 
     private fun filterMenuItem(query: String) {
         val filteredMenuItems = originalMenuItem.filter {
-            it.foodName?.contains(query,ignoreCase = true)==true
+            it.foodName?.contains(query, ignoreCase = true) == true
 
         }
         setAdapter(filteredMenuItems)
-        }
+    }
 }
