@@ -171,7 +171,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="16sp">
+        android:layout_marginBottom="16sp"
+        android:orientation="vertical"
+        >
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/saveInfoButton"
@@ -184,6 +186,30 @@
             android:textAllCaps="false"
             android:textColor="@color/text_colour"
             android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="16sp"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/profileeditetextshape"
+            android:elevation="5sp"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="#FF00"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
     </LinearLayout>
 

@@ -1,5 +1,6 @@
 package eu.practice.foodorderingapp.activities.activity.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,9 +12,8 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import eu.practice.foodorderingapp.R
+import eu.practice.foodorderingapp.activities.activity.activity.LoginActivity
 import eu.practice.foodorderingapp.activities.activity.models.UserModel
-import eu.practice.foodorderingapp.databinding.ActivityPlaceOrderBinding
 import eu.practice.foodorderingapp.databinding.FragmentProfileBinding
 
 
@@ -29,6 +29,7 @@ class ProfileFragment : Fragment() {
     }
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -36,6 +37,13 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
 
         binding = FragmentProfileBinding.inflate(layoutInflater)
+        binding.logOut.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            val intent  = Intent(requireContext(),LoginActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
+        }
+
 
         setUserData()
         binding.saveInfoButton.setOnClickListener {
@@ -117,6 +125,4 @@ class ProfileFragment : Fragment() {
         }
 
     }
-
-
 }
